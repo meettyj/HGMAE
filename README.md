@@ -1,5 +1,6 @@
 # HGMAE
-Code and data for Heterogeneous Graph Masked Autoencoders.
+
+This is the official repo for the AAAI'23 paper "[Heterogeneous Graph Masked Autoencoders](https://arxiv.org/abs/2208.09957)".
 
 
 ## How to Run the code
