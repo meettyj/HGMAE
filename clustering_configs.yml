@@ -1,0 +1,212 @@
+# --------------------- acm ---------------------
+acm:
+  activation: prelu
+  alpha_l: 1
+  attn_drop: 0.5
+  dataset: acm
+  decoder: han
+  encoder: han
+  eva_lr: 0.01
+  eva_wd: 0.0005
+  feat_drop: 0.2
+  feat_mask_rate: 0.5,0.005,0.8
+  gpu: 0
+  hidden_dim: 1024
+  l2_coef: 0
+  leave_unchanged: 0.3
+  loss_fn: sce
+  lr: 0.0008
+  mae_epochs: 10000
+  mask_rate: 0.4
+  mp2vec_feat_alpha_l: 2
+  mp2vec_feat_drop: 0.2
+  mp2vec_feat_pred_loss_weight: 0.1
+  mp_edge_alpha_l: 3
+  mp_edge_mask_rate: 0.7
+  mp_edge_recon_loss_weight: 1
+  mps_batch_size: 256
+  mps_context_size: 3
+  mps_embedding_dim: 64
+  mps_epoch: 20
+  mps_lr: 0.001
+  mps_num_negative_samples: 3
+  mps_walk_length: 10
+  mps_walks_per_node: 3
+  n_labels: 3
+  negative_slope: 0.2
+  nei_num: 2
+  norm: batchnorm
+  num_heads: 4
+  num_layers: 2
+  num_out_heads: 1
+  optimizer: adam
+  patience: 10
+  replace_rate: 0.2
+  residual: false
+  scheduler: true
+  scheduler_gamma: 0.999
+  use_mp2vec_feat_pred: true
+  use_mp_edge_recon: true
+
+
+
+# --------------------- dblp ---------------------
+dblp:
+  activation: prelu
+  alpha_l: 2
+  attn_drop: 0.2
+  dataset: dblp
+  decoder: han
+  encoder: han
+  eva_lr: 0.01
+  eva_wd: 0.0005
+  feat_drop: 0.2
+  feat_mask_rate: 0.5,0.005,0.8
+  gpu: 0
+  hidden_dim: 256
+  l2_coef: 0
+  leave_unchanged: 0.2
+  loss_fn: sce
+  lr: 0.0008
+  mae_epochs: 10000
+  mask_rate: 0.5,0.005,0.8
+  mp2vec_feat_alpha_l: 2
+  mp2vec_feat_drop: 0.1
+  mp2vec_feat_pred_loss_weight: 1
+  mp_edge_alpha_l: 3
+  mp_edge_mask_rate: 0.8
+  mp_edge_recon_loss_weight: 0.1
+  mps_batch_size: 256
+  mps_context_size: 5
+  mps_embedding_dim: 256
+  mps_epoch: 50
+  mps_lr: 0.005
+  mps_num_negative_samples: 3
+  mps_walk_length: 10
+  mps_walks_per_node: 1
+  n_labels: 4
+  negative_slope: 0.2
+  nei_num: 1
+  norm: batchnorm
+  num_heads: 2
+  num_layers: 3
+  num_out_heads: 1
+  optimizer: adam
+  patience: 20
+  replace_rate: 0.3
+  residual: false
+  scheduler: true
+  scheduler_gamma: 0.99
+  seed: 0
+  use_mp2vec_feat_pred: true
+  use_mp_edge_recon: true
+
+
+
+# --------------------- freebase ---------------------
+freebase:
+  activation: prelu
+  alpha_l: 1
+  attn_drop: 0
+  dataset: freebase
+  decoder: han
+  encoder: han
+  eva_lr: 0.01
+  eva_wd: 0.0005
+  feat_drop: 0.5
+  feat_mask_rate: 0.5,0.005,0.8
+  gpu: 0
+  hidden_dim: 1024
+  l2_coef: 0
+  leave_unchanged: 0
+  loss_fn: sce
+  lr: 0.002
+  mae_epochs: 10000
+  mask_rate: 0.5
+  mp2vec_feat_alpha_l: 2
+  mp2vec_feat_drop: 0.2
+  mp2vec_feat_pred_loss_weight: 0.1
+  mp_edge_alpha_l: 2
+  mp_edge_mask_rate: 0.4,0.005,0.7
+  mp_edge_recon_loss_weight: 0.5
+  mps_batch_size: 256
+  mps_context_size: 3
+  mps_embedding_dim: 128
+  mps_epoch: 50
+  mps_lr: 0.001
+  mps_num_negative_samples: 3
+  mps_walk_length: 10
+  mps_walks_per_node: 3
+  n_labels: 3
+  negative_slope: 0.2
+  nei_num: 3
+  norm: batchnorm
+  num_heads: 4
+  num_layers: 3
+  num_out_heads: 1
+  optimizer: adam
+  patience: 20
+  replace_rate: 0.2
+  residual: false
+  scheduler: true
+  scheduler_gamma: 0.999
+  seed: 0
+  use_mp2vec_feat_pred: true
+  use_mp_edge_recon: true
+
+
+
+
+
+# --------------------- aminer ---------------------
+aminer:
+  activation: prelu
+  alpha_l: 2
+  attn_drop: 0.2
+  dataset: aminer
+  decoder: han
+  encoder: han
+  eva_lr: 0.001
+  eva_wd: 0.0001
+  feat_drop: 0.2
+  feat_mask_rate: 0.5,0.005,0.8
+  gpu: 0
+  hidden_dim: 256
+  l2_coef: 0
+  leave_unchanged: 0.3
+  loss_fn: sce
+  lr: 0.001
+  mae_epochs: 10000
+  mask_rate: 0.8
+  mp2vec_feat_alpha_l: 1
+  mp2vec_feat_drop: 0.1
+  mp2vec_feat_pred_loss_weight: 0.1
+  mp_edge_alpha_l: 3
+  mp_edge_mask_rate: 0.5,0.005,0.8
+  mp_edge_recon_loss_weight: 0.1
+  mps_batch_size: 128
+  mps_context_size: 3
+  mps_embedding_dim: 64
+  mps_epoch: 50
+  mps_lr: 0.005
+  mps_num_negative_samples: 3
+  mps_walk_length: 5
+  mps_walks_per_node: 1
+  n_labels: 4
+  negative_slope: 0.2
+  nei_num: 2
+  norm: batchnorm
+  num_heads: 4
+  num_layers: 3
+  num_out_heads: 1
+  optimizer: adam
+  patience: 10
+  replace_rate: 0.2
+  residual: false
+  scheduler: true
+  scheduler_gamma: 0.999
+  seed: 0
+  use_mp2vec_feat_pred: true
+  use_mp_edge_recon: true
+
+
